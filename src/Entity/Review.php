@@ -26,9 +26,9 @@ class Review
      * @ORM\Column(type="integer", nullable=true)
      */
     private $rating;
-
+    
     /**
-     * @ORM\Column(type="datetime", nullable=true)
+     * @ORM\Column(name="created_at", type="datetime", options={"default":"10/12/2010"})
      */
     private $created_at;
 
@@ -41,6 +41,8 @@ class Review
      * @ORM\ManyToOne(targetEntity=user::class, inversedBy="reviews")
      */
     private $user_id;
+
+
 
     public function getId(): ?int
     {
