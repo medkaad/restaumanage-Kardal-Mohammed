@@ -28,7 +28,7 @@ class Review
     private $rating;
     
     /**
-     * @ORM\Column(name="created_at", type="datetime", options={"default":"10/12/2010"})
+     * @ORM\Column(name="created_at", type="datetime", options={"default":"CURRENT_TIMESTAMP"})
      */
     private $created_at;
 
